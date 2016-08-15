@@ -4,6 +4,8 @@ Promise utilities.
 
 Collection of utilities to help with promise handling. Intended to be very lightweight.
 
+[![Build Status](https://travis-ci.org/Janpot/fides.svg?branch=master)](https://travis-ci.org/Janpot/fides)
+
 ## API
 
 ### `fides.fromCallback(Function fn) -> Promise`
