@@ -24,7 +24,7 @@ fides.fromCallback(cb => fs.readFile('...', callback))
 
 ### `fides.try(Function fn) -> Promise`
 
-Runs a function that may eitehr throw or return a value or a promise.
+Runs a function that may either throw or return a value or a promise.
 Returns a promise with the result of that function.
 
 Example:
@@ -32,7 +32,7 @@ Example:
 ```js
 var fides = require('fides');
 
-fides.fromCallback(() => {
+fides.try(() => {
   switch (behavior) {
     case 'sync value':  return 5;
     case 'async value': return Promise.resolve(5);
